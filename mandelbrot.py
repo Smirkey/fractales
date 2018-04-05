@@ -60,19 +60,6 @@ def show(grid):
             if event.type == pygame.QUIT:
                 pygame.quit()
                 quit()
-def zoom():
-    mousePressed = mouse.get_pressed()[0]
-    if mousePressed == 0:
-            firstPress = True
-    if mousePressed:
-        print(firstPress)
-        if firstPress:
-            initialPos = mouse.get_pos()
-            firstPress = False
-        mousePos = mouse.get_pos()
-        print(initialPos, mousePos)
-        pygame.draw.rect(surf, 255, (initialPos[0], initialPos[1], mousePos[0], mousePos[1]), 1)
-
 
 
 Grid = np.zeros(shape=(windowX, windowY))
