@@ -9,7 +9,8 @@ You can tune the algorithm in the "iter" function to show different fractals esp
 by default it's in black and white but you can set the color mode by changing these lines :
 
 newGrid[i][j] = map(grid[i][j], 0, max_iters, 0, 255) => colors
+
 newGrid[i][j] = 255 => black and white
 (put a # before the mode you don't want)
 
-![alt text](https://github.com/Smirkey/fractales/edit/master/output.png)
+![](https://github.com/Smirkey/fractales/blob/master/output.png)
